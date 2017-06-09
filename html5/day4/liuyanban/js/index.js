@@ -86,7 +86,7 @@ function displayContent(tx, res) {
     for (var i = 0; i < res.rows.length; i++) {
         var contentEntry = res.rows.item(i);
         contentContainer.innerHTML += `
-            <li class="list-group-item"> 
+            <li class="list-group-item">
             ${contentEntry.content}
             <div class="btn-group btn-group-xs pull-right">
                 <button class="btn btn-default"   onclick="deleteContent(${contentEntry.id})" > 删除 </button>
